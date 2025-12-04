@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Login | Goldet</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      background: radial-gradient(circle at top, #ffde7a, #d1a63b 40%, #1a1502 100%);
+      color: white;
+      font-family: "Inter", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    form {
+      background: rgba(255, 235, 180, 0.15);
+      padding: 28px 32px;
+      border-radius: 16px;
+      width: 330px;
+      backdrop-filter: blur(6px);
+      border: 2px solid rgba(255, 215, 100, 0.5);
+      box-shadow: 0 0 25px rgba(255,215,100,0.35);
+    }
+
+    h1 {
+      font-family: "Fredoka One", cursive;
+      text-align: center;
+      margin-bottom: 22px;
+      font-size: 36px;
+      color: #ffda6a;
+      text-shadow: 0 3px 8px rgba(0,0,0,0.4);
+    }
+
+    input {
+      padding: 12px;
+      border-radius: 10px;
+      border: 2px solid #e0c873;
+      margin-bottom: 15px;
+      font-size: 16px;
+      background: #fffdf6;
+    }
+
+    button {
+      background: linear-gradient(135deg, #ffe07e, #d4a837);
+      padding: 12px;
+      border: none;
+      border-radius: 12px;
+      width: 100%;
+      font-size: 18px;
+      font-family: "Fredoka One", cursive;
+      cursor: pointer;
+      color: black;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    button:hover {
+      background: linear-gradient(135deg, #fff0a8, #e4c050);
+    }
+
+    .error {
+      background: rgba(255, 0, 0, 0.4);
+      padding: 12px;
+      border-radius: 10px;
+      display: none;
+      margin-bottom: 15px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .show-pass {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      cursor: pointer;
+      margin-bottom: 12px;
+      font-size: 14px;
+    }
+  </style>
