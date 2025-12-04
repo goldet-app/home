@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Goldet</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Inter", sans-serif;
+      display: flex;
+      flex-wrap: wrap;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1a1a1a, #2d2100);
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .left, .right {
+      box-sizing: border-box;
+      padding: 60px;
+    }
+
+    .left {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      background: radial-gradient(circle at top left, #ffcf4d, #b48a2c 60%, #1c1604 100%);
+      color: #fff8dd;
+      box-shadow: inset 0 0 80px rgba(255,255,255,0.15);
+    }
+
+    .left h1 {
+      font-family: "Fredoka One", cursive;
+      font-size: 60px;
+      margin: 0 0 10px;
+      letter-spacing: 1px;
+      text-shadow: 0 3px 8px rgba(0,0,0,0.4);
+    }
+
+    .left p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin: 20px 0 40px;
+      color: #fff3c2;
+      max-width: 500px;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      padding: 14px 28px;
+      font-size: 18px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      border: none;
+      color: black;
+      background: linear-gradient(135deg, #ffdd67, #cfab2b);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+      transition: 0.25s;
+    }
+
+    .btn:hover {
+      transform: translateY(-3px);
+      background: linear-gradient(135deg, #ffe07f, #d9b945);
+    }
+
+    .discord-btn {
+      background: linear-gradient(135deg, #ffffff, #d7d7d7);
+    }
+
+    .discord-btn:hover {
+      background: linear-gradient(135deg, #ffffff, #bbbbbb);
+    }
+
+    .pronounce {
+      margin-top: 30px;
+      font-size: 13px;
+      color: #fff0bb;
+      opacity: 0.85;
+    }
+
+    .footer {
+      margin-top: auto;
+      font-size: 12px;
+      opacity: 0.8;
+    }
+
+    .right {
+      width: 50%;
+      background: linear-gradient(135deg, #1c1604, #2b230c, #5a4816);
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      justify-content: center;
+      padding: 40px;
+      gap: 20px;
+      box-shadow: inset 0 0 80px rgba(255,215,0,0.07);
+    }
+
+    .icon {
+      width: 90px;
+      height: 90px;
+      border-radius: 18px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      border: 3px solid #e6c459;
+      box-shadow: 0 0 15px rgba(255, 220, 120, 0.4);
+      transition: transform 0.25s;
+    }
+
+    .icon:hover {
+      transform: scale(1.1);
+    }
+
+    .icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .version {
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      font-size: 12px;
+      color: #c0a85e;
+    }
+
+    /* Responsive */
+    @media (max-width: 900px) {
+      body { flex-direction: column; }
+      .left, .right { width: 100%; padding: 40px; }
+      .left h1 { font-size: 42px; }
+      .buttons { flex-direction: column; }
+      .btn { width: 100%; text-align: center; }
+      .icon {
+        width: 70px;
+        height: 70px;
+      }
+      .version { static; text-align: center; margin-top: 20px; }
+    }
+
+    @media (max-width: 480px) {
+      .left h1 { font-size: 32px; }
+      .left p { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="left">
+    <h1>Goldet</h1>
+    <h1>The Golden Blook Server</h1>
+    <p>Welcome to the shiny and blazing Goldet platform—rebuilt with a polished golden UI and improved systems. Enjoy your stay!</p>
+
+    <div class="buttons">
+      <a class="btn" href="/signup.html">Signup</a>
+      <a class="btn" href="/login.html">Login</a>
+      <a class="btn discord-btn" href="https://discord.gg/rfHHYjhA3H" target="_blank">Discord</a>
+      <a class="btn" href="/credits.html">Credits</a>
+    </div>
+
+    <div class="pronounce">🔈 Pronunciation ("Gold-et")</div>
+    <div class="footer">Goldet © 2025 • Not affiliated with Blooket</div>
+  </div>
+
+  <div class="right">
+    <!-- your original icons preserved -->
+    <div class="icon"><img src="https://cdn.glitch.global/36ec2602-304b-444b-8f2f-08c65c92bbc0/thumbnails%2Fthumbnails_Strawberry%20Milk.png?1750440367893"></div>
+    <div class="icon"><img src="https://cdn.glitch.global/36ec2602-304b-444b-8f2f-08c65c92bbc0/thumbnails%2Fthumbnails_Warriet%20Milk.png?1750440415086"></div>
+    <div class="icon"><img src="https://cdn.glitch.global/36ec2602-304b-444b-8f2f-08c65c92bbc0/thumbnails%2Fmoon.png?1750451519920"></div>
+    <div class="icon"><img src="https://cdn.glitch.global/36ec2602-304b-444b-8f2f-08c65c92bbc0/thumbnails%2Fastronaut.png?1750451907761"></div>
+    <div class="icon"><img src="https://i.postimg.cc/jSssbtjq/kingPig.png"></div>
+    <div class="icon"><img src="https://i.postimg.cc/t7T7JQH8/speed-Good-Alr.png"></div>
+    <div class="icon"><img src="https://i.postimg.cc/htNhD5Z3/Blooket-Warrior.gif"></div>
+    <div class="icon"><img src="/images/taco.png"></div>
+  </div>
+
+  <div class="version">
+    Running Goldet v1.3.0<br>
+    <a href="#" style="color:#c0a85e;text-decoration:underline;">Terms of Service</a>
+  </div>
+
+</body>
+</html>
