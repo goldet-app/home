@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Goldet — Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="top-bar">
+  <h2 id="usernameField">Loading...</h2>
+  <button class="top-btn" id="lookupBtn">Lookup User</button>
+  <button class="top-btn" id="logoutBtn">Logout</button>
+</div>
+
+<div class="dashboard-grid">
+  <div class="card">
+    <h3>Rank</h3>
+    <div class="stat-number" id="rankField">0</div>
+  </div>
+
+  <div class="card">
+    <h3>Tokens</h3>
+    <div class="stat-number" id="tokens"></div>
+  </div>
+
+  <div class="card">
+    <h3>Gold Unlocked</h3>
+    <div class="stat-number" id="goldsUnlocked"></div>
+  </div>
+
+  <div class="card">
+    <h3>Packs Opened</h3>
+    <div class="stat-number" id="packsOpened"></div>
+  </div>
+
+  <div class="card">
+    <h3>Messages Sent</h3>
+    <div class="stat-number" id="messagesSent"></div>
+  </div>
+
+  <div class="card">
+    <h3>Friends</h3>
+    <div id="friendsList"></div>
+  </div>
+</div>
+
+<!-- Popup -->
+<div class="popup-bg" id="lookupPopup">
+  <div class="popup-box">
+    <h2>Lookup User</h2>
+    <input id="lookupInput" placeholder="Enter username">
+    <button id="searchUserBtn">Search</button>
+    <button id="closePopupBtn" style="margin-top:10px;">Close</button>
+    <div id="lookupError" class="error"></div>
+  </div>
+</div>
+
+<script type="module" src="scripts/dashboard.js"></script>
+<script type="module" src="scripts/authGuard.js"></script>
+</body>
+</html>
