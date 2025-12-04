@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Signup | Goldet</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      background: radial-gradient(circle at top, #ffdd7c, #c5962d 50%, #1b1601 100%);
+      font-family: "Inter", sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+
+    .signup-box {
+      background: rgba(255,236,190,0.15);
+      border: 2px solid rgba(255,215,120,0.5);
+      padding: 28px;
+      border-radius: 18px;
+      width: 90%;
+      max-width: 380px;
+      text-align: center;
+      backdrop-filter: blur(6px);
+      box-shadow: 0 0 25px rgba(255,215,120,0.35);
+    }
+
+    h1 {
+      font-family: "Fredoka One", cursive;
+      font-size: 34px;
+      color: #ffe69a;
+      text-shadow: 0 3px 8px rgba(0,0,0,0.4);
+      margin-bottom: 20px;
+    }
+
+    form { display: flex; flex-direction: column; gap: 14px; }
+
+    input, textarea {
+      padding: 12px;
+      border-radius: 10px;
+      border: 2px solid #e7cd7c;
+      background: #fffdf4;
+      font-size: 16px;
+      color: black;
+      font-family: "Inter", sans-serif;
+    }
+
+    button {
+      background: linear-gradient(135deg, #ffe07e, #d4a837);
+      padding: 12px;
+      border: none;
+      color: black;
+      border-radius: 12px;
+      font-size: 18px;
+      font-family: "Fredoka One", cursive;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    }
+
+    .alert {
+      margin-top: 12px;
+      padding: 10px;
+      border-radius: 10px;
+      background: rgba(255, 215, 90, 0.25);
+    }
+
+    .step { display: none; }
+    .step.active { display: flex; flex-direction: column; }
+  </style>
+</head>
