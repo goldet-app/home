@@ -1,57 +1,177 @@
-/* GLOBAL */
+/* ------------------------------
+   GLOBAL GOLD THEME
+------------------------------ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   padding: 0;
-  background: #121212;
+  background: #0e0c08; /* deep dark brown/black */
   font-family: 'Inter', sans-serif;
   color: #fff;
+  overflow-x: hidden;
 }
 
-h1, h2, h3 {
-  font-weight: 700;
-}
-
-/* CENTER PANEL LAYOUT */
+/* Center Wrapper */
 .center-box {
-  width: 380px;
-  margin: 90px auto;
-  background: #1d1d1d;
-  padding: 30px;
-  border-radius: 20px;
-  box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
-  border: 1px solid rgba(255, 215, 0, 0.2);
+  width: 420px;
+  margin: 100px auto;
+  background: #1b160d;
+  padding: 35px;
+  border-radius: 22px;
+  text-align: center;
+
+  border: 2px solid #f7d778;
+  box-shadow: 0 0 25px rgba(255, 204, 0, 0.4);
 }
 
+/* Gold Headers */
+h1, h2, h3 {
+  background: linear-gradient(90deg, #ffe287, #ffd451, #ffcf33);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 800;
+}
+
+/* INPUTS */
 input {
   width: 100%;
-  padding: 12px;
-  margin: 10px 0;
+  padding: 14px;
+  margin: 12px 0;
   border-radius: 12px;
-  border: none;
-  background: #2a2a2a;
-  color: white;
+  border: 2px solid #564621;
+  background: #272218;
+  color: #fff;
   font-size: 16px;
+  transition: 0.2s;
 }
 
+input:focus {
+  border-color: #ffde80;
+  box-shadow: 0 0 12px rgba(255, 214, 97, 0.5);
+  outline: none;
+}
+
+/* BUTTONS */
 button {
   width: 100%;
-  padding: 12px;
-  margin-top: 12px;
+  padding: 14px;
+  margin-top: 14px;
   border-radius: 12px;
-  background: linear-gradient(135deg, #ffd700, #caa200);
+  background: linear-gradient(135deg, #ffe07a, #ffc72b);
   border: none;
-  color: #000;
-  font-size: 17px;
+  color: #3b2a00;
+  font-size: 18px;
+  font-weight: 700;
   cursor: pointer;
-  font-weight: bold;
+  transition: 0.2s;
 }
 
 button:hover {
-  opacity: 0.85;
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(255, 217, 102, 0.7);
 }
 
+/* ERROR TEXT */
 .error {
-  color: #ff6363;
   margin-top: 10px;
+  color: #ff6f6f;
   font-size: 14px;
+}
+
+/* MAIN DASHBOARD GRID */
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 25px;
+  padding: 30px;
+}
+
+/* Dashboard Cards */
+.card {
+  background: #1b150d;
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  border: 2px solid #e5c46f;
+  box-shadow: 0 0 15px rgba(224, 170, 38, 0.3);
+  transition: 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 0 28px rgba(255, 208, 83, 0.6);
+}
+
+/* Stats Number */
+.stat-number {
+  font-size: 40px;
+  font-weight: 900;
+  margin-top: 12px;
+  color: #ffe995;
+  text-shadow: 0 0 10px rgba(255, 196, 65, 0.5);
+}
+
+/* Username / Navigation Bar */
+.top-bar {
+  width: 100%;
+  padding: 18px 24px;
+  background: #18130c;
+  border-bottom: 2px solid #d9b35b;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-btn {
+  padding: 10px 20px;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #ffdf7e, #ffca32);
+  font-weight: 700;
+  color: #3b2a00;
+  border: none;
+  cursor: pointer;
+}
+
+.top-btn:hover {
+  box-shadow: 0 0 12px rgba(255, 214, 97, 0.7);
+  transform: scale(1.05);
+}
+
+/* FRIEND LIST */
+.friend-item {
+  background: #221a10;
+  padding: 10px 12px;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  border: 1px solid #e3c16c;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Popups */
+.popup-bg {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.popup-box {
+  background: #1e180e;
+  padding: 30px;
+  border-radius: 18px;
+  border: 2px solid #ffda75;
+  box-shadow: 0 0 28px rgba(255, 217, 102, 0.4);
+  width: 380px;
+  text-align: center;
 }
